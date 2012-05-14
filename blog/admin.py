@@ -19,6 +19,5 @@ class BlogPostAdmin(admin.ModelAdmin):
 
 # registers both the models and the admin displays for 
 # the admin site
-# TODO: Lynn must complete these lines
 admin.site.register(Comment, CommentAdmin)
 admin.site.register(BlogPost, BlogPostAdmin)

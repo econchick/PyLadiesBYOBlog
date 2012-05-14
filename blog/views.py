@@ -1,7 +1,6 @@
 from blog.forms import CommentForm
 from blog.models import BlogPost, Comment
 from django.core.context_processors import csrf
-from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.shortcuts import render_to_response
@@ -9,10 +8,11 @@ from django.template import RequestContext, Template
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView
 
-
+# TODO: (Lynn) Should this be a class, its own function,
+# or a part of the Comment class?  
 def add_comment(request, pk):
     """
-    Add a new comment.
+    Add a new comment.  Code adapted from http://lightbird.net/dbe/blog.html
     """
     p = request.POST
 
@@ -31,7 +31,8 @@ def add_comment(request, pk):
         notify = True
         if request.user.username == "ak": notify = False
         comment.save(notify=notify)
-    return HttpResponseRedirect(reverse("dbe.blog.views.post", args=[pk]))
+    return HttpResponseRedirect(reverse("blog.views.post", args=[pk]))
+
 
 class BlogView(ListView):
     model = BlogPost
@@ -67,6 +68,8 @@ class SinglePost(DetailView):
         return self.render_to_response(context)
 
 
+# TODO (Lynn) Should combine w/ add_comment function above
+# or rework as its one class?
 class AddComment(CreateView):
     """ 
     Adds a new comment.

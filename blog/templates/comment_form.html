@@ -1,0 +1,13 @@
+{% extends "home.html" %}
+
+{% block content %}
+<div id="cform">
+    <form action="" method="post">{% csrf_token %}
+        <p>Your Comment:</p>
+        {{ form.body }}
+        <p>Your Name:</label>
+        <p>{{ form.author }}</p>
+	    <input class="btn" type="submit" value="Submit" />
+    </form>
+</div>
+{% endblock %}

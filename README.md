@@ -18,38 +18,45 @@ HOW-TO:
 -------
 For ladies wanting to use this to build your own blog, here is a quick, barebones  overview of what you will need:
 
-1) Download Git (this is not a GitHub account)
+1) Download Git (this is not a GitHub account) & create/set up a GitHub account: http://help.github.com/mac-set-up-git/
 
-2) Create a GitHub account
+2) Fork this repo (follow the GitHub directions on how to Fork a repo) & clone it: http://help.github.com/fork-a-repo/
+You will have a new folder called PyLadiesBYOBlog with the files we created at the workshop.
 
-3) Fork this repo (follow the GitHub directions on how to Fork a repo).  You will have a new folder called PyLadiesBYOBlog with the files we created at the workshop.
-
-4) Make sure you have Django on your system.
+3) Make sure you have Django on your system.
 
 --a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, "PyLadiesBYOBlog"
  
---b) Within your new virtualenv on your terminal/command line, type: pip install django
+--b) Within your new virtualenv on your terminal/command line, type: 
+     
+    $ pip install django
  
 --c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
  
---d) In your command line, type: easy_install django
+--d) In your command line, type: 
+    
+    $ easy_install django
 
-5) In the PyLadiesBYOBlog/DjangoBlog/secret_key.py file, generate your own secret key using any characters, just as long as it's 50 characters long.  Keep it secret!!
+4) In the PyLadiesBYOBlog/DjangoBlog/secret_key.py file, generate your own secret key using any characters, just as long as it's 50 characters long.  Keep it secret!!
  
-6) In PyLadiesBYOBlog directory from the command line, type: python manage.py syncdb
+5) In PyLadiesBYOBlog directory from the command line, type: 
+    
+    $ python manage.py syncdb
 --a) create a superuser, like we did during the workshop.  Just remember your username & password.
 
-7) In PyLadiesBYOBlog directory from the command line, type: python manage.py runserver
+6) In PyLadiesBYOBlog directory from the command line, type: 
+    
+    $ python manage.py runserver
 
-8) Navigate to 'localhost:8000/admin' and write up a few blog posts.
+7) Navigate to 'localhost:8000/admin' in your browswer and write up a few blog posts.
 
-9) Navigate to 'localhost:8000' to see your posts.
+8) Navigate to 'localhost:8000' to see your posts.
 
-OPTIONAL
---------
-10) To get your project 'live' so folks can read your blog, Heroku offers a free service for small sites with a great tutorial here: https://devcenter.heroku.com/articles/django
+*OPTIONAL*
 
---------
+9) To get your project 'live' so folks can read your blog, Heroku offers a free service for small sites with a great tutorial here: https://devcenter.heroku.com/articles/django
+
+
 On my TODO/wish list:
 --------
 1) Proper Sphinx documentation

@@ -23,12 +23,15 @@ For ladies wanting to use this to build your own blog, here is a quick, barebone
 3) Fork this repo (follow the GitHub directions on how to Fork a repo).  You will have a new folder called PyLadiesBYOBlog with the files we created at the workshop.
 
 4) Make sure you have Django on your system.
-	
-	a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, PyLadiesBYOBlog
-	b) Within your new virtualenv on your terminal/command line, type: pip install django
 
-	c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
-	d) In your command line, type: easy_install django
+--a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, "PyLadiesBYOBlog"
+ 
+--b) Within your new virtualenv on your terminal/command line, type: pip install django
+ 
+--c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
+ 
+--d) In your command line, type: easy_install django
+ 
 5) In PyLadiesBYOBlog directory from the command line, type: python manage.py runserver
 
 6) Navigate to 'localhost:8000/admin' and throw up a few blog posts.

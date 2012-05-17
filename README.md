@@ -14,7 +14,6 @@ This Django-based site is the very barest of bones for a blogging site.  It uses
 
 For folks wanting to contribute: Anyone is welcome to contribute!  Please be excessively clear in whatever code you're adding with hyper-aware documentation.  
 
-<<<<<<< HEAD
 For ladies wanting to use this to build your own blog, here is a quick, barebones  overview of what you will need:
 
 1) Download Git (this is not a GitHub account)
@@ -25,11 +24,10 @@ For ladies wanting to use this to build your own blog, here is a quick, barebone
 
 4) Make sure you have Django on your system.
 	
-	a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, PyLadiesBYOBlog
-	b) Within your new virtualenv on your terminal/command line, type: pip install django
-
-	c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
-	d) In your command line, type: easy_install django
+--a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, PyLadiesBYOBlog
+--b) Within your new virtualenv on your terminal/command line, type: pip install django
+--c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
+--d) In your command line, type: easy_install django
 5) In PyLadiesBYOBlog directory from the command line, type: python manage.py runserver
 
 6) Navigate to 'localhost:8000/admin' and throw up a few blog posts.

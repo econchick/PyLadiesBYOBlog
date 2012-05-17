@@ -6,3 +6,4 @@ blog/__init__.pyc
 blog/admin.pyc
 blog/forms.pyc
 blog/models.pyc
+blog/views.pyc

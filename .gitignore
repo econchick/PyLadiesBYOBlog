@@ -4,3 +4,4 @@ DjangoBlog/settings.pyc
 blog/.DS_Store
 blog/__init__.pyc
 blog/admin.pyc
+blog/forms.pyc

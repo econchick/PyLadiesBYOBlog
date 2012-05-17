@@ -25,9 +25,13 @@ For ladies wanting to use this to build your own blog, here is a quick, barebone
 4) Make sure you have Django on your system.
 	
 --a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, PyLadiesBYOBlog
+
 --b) Within your new virtualenv on your terminal/command line, type: pip install django
+
 --c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
+
 --d) In your command line, type: easy_install django
+
 5) In PyLadiesBYOBlog directory from the command line, type: python manage.py runserver
 
 6) Navigate to 'localhost:8000/admin' and throw up a few blog posts.
@@ -83,7 +87,7 @@ You will have a new folder called PyLadiesBYOBlog with the files we created at t
 
 On my TODO/wish list:
 --------
->>>>>>> 6affd397e081202359b8c48871cc4a7475d1add4
+
 1) Proper Sphinx documentation
 
 2) Fixing the comment form to be visable & to work

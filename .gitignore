@@ -7,3 +7,5 @@ blog/admin.pyc
 blog/forms.pyc
 blog/models.pyc
 blog/views.pyc
+blog/templates/.DS_Store
+blog/templates/.DS_Store

@@ -1,0 +1,50 @@
+Introduction:
+	-web dev overview
+		-front end versus back end
+		-different options for Python
+			-why python over ruby on rails/php/etc
+		-Model-View-Controller/Model-Template-View
+	-Django overview
+		-urls
+		-models
+		-database
+		-views
+		-templates
+		-front end
+	-Virtual Environments
+		-Why is one important
+		-Required/makes it super easy to deploy onto Heroku.
+
+I. Setting up Environment
+	A. easy_install pip
+	B. pip install virtualenv
+	C. pip install virtualenvwrapper
+	D. pip install git 
+	NOTE: We did not get to this part in the workshop.  Git is required for pushing your site to Heroku.  A GitHub account is not Git, and GitHub is not required for Heroku. 
+		1. intro to git
+		2. set up github
+		3. When deploying to Heroku, just 'git push' with initial commits & future edits/commits.
+	E. pip install django
+II. Creating a skeleton project
+	A. python django-admin.py startproject mysite
+	B. python manage.py runserver
+	C. configure settings.py for sqlite3
+III. Create & Activate Models
+VI. Activate Admin Site
+V. Designing URLs
+	1. Intro to regex
+VI. Writing Views
+	1. generic views & class views
+	2. intro to classes in Python
+VII.  Templates & static pages
+	1. blog template
+	2. CSS/HTML
+	3. Can add Javascript here for further awesomeness, like Google Analytics tracking to see how often your site gets visited
+VIII.  Writing a blog post (internal server)
+IV. Deploying
+	-github for having code public, allowing others to contribute to code
+	-Heroku: https://devcenter.heroku.com/articles/django
+V. Future use
+	-blogging from desktop & git push to publish
+	-blogging from admin page
+	

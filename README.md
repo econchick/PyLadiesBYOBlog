@@ -4,11 +4,13 @@ PyLadiesBYOBlog
 Build Your Own Django Blog
 
 PyLadiesSF workshop hosted on May 12th, 2012
+PyLadiesCZ workshop hosted on November 16th, 2012
 
-Info about PyLadiesSF: www.meetup.com/PyLadiesSF
+Info about [PyLadiesSF](www.meetup.com/PyLadiesSF "PyLadiesSF meetup") 
 
-Info about PyLadies: www.pyladies.com
+Info about [PyLadiesCZ](www.meetup.com/PyLadiesCZ "PyLadiesCZ meetup")
 
+Info about [PyLadies](www.pyladies.com "PyLadies Main Site")
 
 This Django-based site is the very barest of bones for a blogging site.  It uses Django's class based views as opposed to the Django tutorial's function-defined views.
 
@@ -16,82 +18,65 @@ For folks wanting to contribute: Anyone is welcome to contribute!  Please be exc
 
 For ladies wanting to use this to build your own blog, here is a quick, barebones  overview of what you will need:
 
-1) Download Git (this is not a GitHub account)
-
-2) Create a GitHub account
-
-3) Fork this repo (follow the GitHub directions on how to Fork a repo).  You will have a new folder called PyLadiesBYOBlog with the files we created at the workshop.
-
-4) Make sure you have Django on your system.
+1. Download Git (this is not a GitHub account) found [here](http://git-scm.com/downloads "Git Downloads")
+**Optional**: If you want to deploy on OpenShift:
+	1. Sign up for an [OpenShift Account](https://openshift.redhat.com/app/account/new "OpenShift Acct Signup")
+	2. Follow the directions to install [Red Hat tools](https://openshift.redhat.com/community/get-started "RHC install")
+	3. `$ rhc setup` and follow instructions.
+	4. `$ rhc app create -a {{app name}} -t python`
+	5. Continue on!
 	
---a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, PyLadiesBYOBlog
+	**Optional**: it's nice to get in the hang of using proper tools for managing web applications and projects.  Suffice it to say, it's highly recommended to use virtualenv, a tool that manages projects with their respective packages.<br />
+	On a Mac: `$ sudo easy_install pip`<br />
+	On Ubuntu: `$ sudo apt-get pip`<br />
+	On Fedora: `$ sudo yum install pip`<br />
+	On Windows: TODO <br />
+	For Everyone:
+	1. `$ pip install virtualenv`
+	2. `$ pip install virtualenvwrapper`
+	3. `$ export WORKON_HOME=~/Envs`
+	4. `$ mkdir -p $WORKON_HOME`
+	5. `$ source /usr/local/bin/virtualenvwrapper.sh`
+	6. `$ mkvirtualenv {{ prj_name }}`
+	7. `(prj_name)$ pip install django`
+	
+	Skip to step 3.
+2. Download and Install [Django](https://www.djangoproject.com/download/ "Django Download")
 
---b) Within your new virtualenv on your terminal/command line, type: pip install django
-
---c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
-
---d) In your command line, type: easy_install django
-
-5) In PyLadiesBYOBlog directory from the command line, type: python manage.py runserver
-
-6) Navigate to 'localhost:8000/admin' and throw up a few blog posts.
-
-7) Navigate to 'localhost:8000' to see your posts.
+3. **Note**: if you created an OpenShift account, and installed the tools, fork this repo into the application directory that the `rhc app create` process did : 
+	
+	`$ git clone git@github.com:econchick/PyLadiesBYOBlog.git {{directory name}}`
 
 
-On my TODO/wish list:
+4. For those that did not create an OpenShift account, fork this repo: `$ git clone git@github.com:econchick/PyLadiesBYOBlog.git`  
+
+4. Edit the `settings.py` file to your own project.  You will need to make a random string of letters, numbers, and characters for `SECRET_KEY`.  Do not share your settings publically.
+
+5. In PyLadiesBYOBlog directory from the command line, type: `python manage.py runserver`
+
+6. Navigate to 'localhost:8000/admin' and throw up a few blog posts.
+
+7. Navigate to 'localhost:8000' to see your posts.
+
+If you created an OpenShift account and downloaded the Red Hat tools:
+
+1. `$ git commit -am "your message here, e.g. 'initial commit'"`
+2. `$ git push`
+3. You should see it live!
+
 
 =======
-HOW-TO:
--------
-For ladies wanting to use this to build your own blog, here is a quick, barebones  overview of what you will need:
-
-1) Download Git (this is not a GitHub account) & create/set up a GitHub account: http://help.github.com/mac-set-up-git/
-
-2) Fork this repo (follow the GitHub directions on how to Fork a repo) & clone it: http://help.github.com/fork-a-repo/
-You will have a new folder called PyLadiesBYOBlog with the files we created at the workshop.
-
-3) Make sure you have Django on your system.
-
---a) If you successfully got virtualenv/virtualenv wrapper, create a new virtual environment within the newly forked directory, "PyLadiesBYOBlog"
- 
---b) Within your new virtualenv on your terminal/command line, type: 
-     
-    $ pip install django
- 
---c) If you do not have virtualenv, navitage to the newly forked directory from step 3 in your command line.
- 
---d) In your command line, type: 
-    
-    $ easy_install django
-
-4) In the PyLadiesBYOBlog/DjangoBlog/secret_key.py file, generate your own secret key using any characters, just as long as it's 50 characters long.  Keep it secret!!
- 
-5) In PyLadiesBYOBlog directory from the command line, type: 
-    
-    $ python manage.py syncdb
---a) create a superuser, like we did during the workshop.  Just remember your username & password.
-
-6) In PyLadiesBYOBlog directory from the command line, type: 
-    
-    $ python manage.py runserver
-
-7) Navigate to 'localhost:8000/admin' in your browswer and write up a few blog posts.
-
-8) Navigate to 'localhost:8000' to see your posts.
-
-*OPTIONAL*
-
-9) To get your project 'live' so folks can read your blog, Heroku offers a free service for small sites with a great tutorial here: https://devcenter.heroku.com/articles/django
 
 
-On my TODO/wish list:
+TODO
 --------
 
-1) Proper Sphinx documentation
+0. Lulz openshift doesn't actually work.
 
-2) Fixing the comment form to be visable & to work
+1. Proper Sphinx documentation
 
-3) Adding the ability to format text when blogging using a WYSIWYG editor (WYSIWYG = 'what you see is what you get')
+2. Fixing the comment form to be visable & to work
 
-4) Ability to upload media (e.g. images), link to other pages
+3. Adding the ability to format text when blogging using a WYSIWYG editor (WYSIWYG = 'what you see is what you get')
+
+4. Ability to upload media (e.g. images), link to other pages

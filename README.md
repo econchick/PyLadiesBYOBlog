@@ -32,6 +32,7 @@ For ladies wanting to use this to build your own blog, here is a quick, barebone
 	On Fedora: `$ sudo yum install pip`<br />
 	On Windows: TODO <br />
 	For Everyone:
+	
 	1. `$ pip install virtualenv`
 	2. `$ pip install virtualenvwrapper`
 	3. `$ export WORKON_HOME=~/Envs`

@@ -34,13 +34,13 @@ For ladies wanting to use this to build your own blog, here is a quick, barebone
 	
 	For Everyone:
 	
-	1. `$ pip install virtualenv`
-	2. `$ pip install virtualenvwrapper`
-	3. `$ export WORKON_HOME=~/Envs`
-	4. `$ mkdir -p $WORKON_HOME`
-	5. `$ source /usr/local/bin/virtualenvwrapper.sh`
-	6. `$ mkvirtualenv {{ prj_name }}`
-	7. `(prj_name)$ pip install django`
+	1.`$ pip install virtualenv`
+	2.`$ pip install virtualenvwrapper`
+	3.`$ export WORKON_HOME=~/Envs`
+	4.`$ mkdir -p $WORKON_HOME`
+	5.`$ source /usr/local/bin/virtualenvwrapper.sh`
+	6.`$ mkvirtualenv {{ prj_name }}`
+	7.`(prj_name)$ pip install django`
 	
 	Skip to step 3.
 2. Download and Install [Django](https://www.djangoproject.com/download/ "Django Download")

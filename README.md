@@ -31,6 +31,7 @@ For ladies wanting to use this to build your own blog, here is a quick, barebone
 	On Ubuntu: `$ sudo apt-get pip`<br />
 	On Fedora: `$ sudo yum install pip`<br />
 	On Windows: TODO <br />
+	
 	For Everyone:
 	
 	1. `$ pip install virtualenv`

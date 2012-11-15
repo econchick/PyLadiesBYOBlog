@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="{{ HTML_LANG }}"> 
+<head>
+  <meta charset="utf-8"/>
+  <title>{% block title %}PyLadies RuPy Blog{%endblock%}</title>  
+  <meta name="author" content="Lynn Root">
+  
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+  
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+    
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  {% block scripts %}
+  {% endblock %}
+</head>
+
+<body>   
+  <header class="clearfix" role="banner">
+    <div class="wrapper">
+      <h1 class="huge"><a href="{% url home %}">PyLadies RuPy Blog</a></h1>
+      {% if user.is_staff %}
+        <h3 class="normal"><a href="{% url admin:index %}">Admin</a> | <a href="{% url admin:ZieBlog_post_add %}">Add post</a></h3>
+      {% else %}
+        <h3 class="normal"><a href="mailto:lynn@lynnroot.com">Contact</a></h3>
+      {% endif %}
+    </div>
+  </header>
+  
+  {% block content %}
+  {% endblock %}
+  
+    
+<footer class="clearfix">
+    <p role="contentinfo">© 2012 <a href="mailto:lynn@lynnroot.com">Lynn Root</a><br>
+    Proudly powered by <a href="http://djangoproject.com">Django</a>.</p>
+  </div>
+</footer>
+  
+</body>
+</html>

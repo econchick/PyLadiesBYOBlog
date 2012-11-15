@@ -1,4 +1,4 @@
-# Django settings for website project.
+# Django settings for rupyblog project.
 
 import os,imp
 
@@ -99,10 +99,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'website.urls'
+ROOT_URLCONF = 'rupyblog.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'website.wsgi.application'
+WSGI_APPLICATION = 'rupyblog.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".

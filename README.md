@@ -38,7 +38,7 @@ This Django-based site is the very barest of bones for a blogging site.  It uses
 2. Download and Install [Django](https://www.djangoproject.com/download/ "Django Download")
 3. **OPTIONAL** If you want comments on your blog, I'd suggest using [Disqus](http://disqus.com).  A free account is required.  We _could_ build our own comment system pretty easily within the blog, but we would not have spam filters setup properly.  To set up comments, follow the template portion of the [slides](ineedtoputthelinkehere) (refer to notes of the second template slide, where you copy HTML files).
 
-If you want to work through the workshop again yourself (which I highly suggest), please take a look at the [slides](ineedtoputthelinkhere) to walk you through, and skip these next steps until #6: Deployment.  
+**NOTE** If you want to work through the workshop again yourself (which I highly suggest), please take a look at the [slides](ineedtoputthelinkhere) to walk you through, and skip these next steps until #6: Deployment.  
 
 You can poke around at my code as you go along in this repository. 
 

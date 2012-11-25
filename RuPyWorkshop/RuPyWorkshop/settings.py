@@ -27,7 +27,7 @@ DATABASES = {
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Prague'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -82,7 +82,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'vp6q@rd#r53hyjgt-2_7r9kd&amp;4q4fr2sxfv5rgy71(0u$s8p#g'
+SECRET_KEY = 'YOU-RES W1LL B3 D1FFERENT. IG0R3 TH1S L1NE.'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

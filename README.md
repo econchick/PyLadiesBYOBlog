@@ -59,6 +59,13 @@ You can poke around at my code as you go along in this repository.
 8. Deployment: **OPTIONAL**  If you want folks to see your blog, then I'd suggest deploying on [Heroku](http://heroku.com) or [OpenShift](http://openshift.redhat.com) (be wary, I had a difficult time deploying on OpenShift).  You will need an account with either, but due to the small size of your application, it will be free to put up online.  <br /><br />
 Heroku has a great [how-to Deploy Django](https://devcenter.heroku.com/articles/django) using their services. 
 
+ADDITIONAL RESOURCES
+--------------------
+1. [The main Django Tutorial](https://docs.djangoproject.com/en/1.4/intro/tutorial01/)
+2. [Learn Python the Hard Way](http://learnpythonthehardway.com): A great way to practice Python for brand new folks.
+3. [Boston Python Workshop Tutorial](https://openhatch.org/wiki/Boston_Python_Workshop_6/Friday/Tutorial) This site goes into more detail regarding Python data structures.
+4. [CodingBat](http://codingbat.com/python) Practice small Python exercises.
+5. [More Simple Django Project Tutorials](http://lightbird.net/dbe/) Where this blog application got its inspiration!
 
 =======
 

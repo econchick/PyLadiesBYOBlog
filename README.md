@@ -36,9 +36,9 @@ This Django-based site is the very barest of bones for a blogging site.  It uses
 	
 	Skip step 2.
 2. Download and Install [Django](https://www.djangoproject.com/download/ "Django Download")
-3. **OPTIONAL** If you want comments on your blog, I'd suggest using [Disqus](http://disqus.com).  A free account is required.  We _could_ build our own comment system pretty easily within the blog, but we would not have spam filters setup properly.  To set up comments, follow the template portion of the [slides](ineedtoputthelinkehere) (refer to notes of the second template slide, where you copy HTML files).
+3. **OPTIONAL** If you want comments on your blog, I'd suggest using [Disqus](http://disqus.com).  A free account is required.  We _could_ build our own comment system pretty easily within the blog, but we would not have spam filters setup properly.  To set up comments, follow the template portion of the [slides][] (refer to notes of the second template slide, where you copy HTML files).
 
-**NOTE** If you want to work through the workshop again yourself (which I highly suggest), please take a look at the [slides](ineedtoputthelinkhere) to walk you through, and skip these next steps until #6: Deployment.  
+**NOTE** If you want to work through the workshop again yourself (which I highly suggest), please take a look at the [slides][] to walk you through, and skip these next steps until #6: Deployment.  
 
 You can poke around at my code as you go along in this repository. 
 
@@ -66,6 +66,8 @@ ADDITIONAL RESOURCES
 3. [Boston Python Workshop Tutorial](https://openhatch.org/wiki/Boston_Python_Workshop_6/Friday/Tutorial) This site goes into more detail regarding Python data structures.
 4. [CodingBat](http://codingbat.com/python) Practice small Python exercises.
 5. [More Simple Django Project Tutorials](http://lightbird.net/dbe/) Where this blog application got its inspiration!
+
+[slides]: https://github.com/econchick/PyLadiesBYOBlog/blob/master/RuPyWorkshopSlides.pdf?raw=true
 
 =======
 
